@@ -4,46 +4,230 @@
     <!--Metadatos-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Title-->
     <title>Html avanzado</title>
-
     <!--Hoja de estilos-->
     <link rel="stylesheet" href="2.css">
+    <!--Google fonts-->
+         <!--Fonts parrafots-->
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+         <!--Font special-->
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+         <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@1,8..144,100&display=swap" rel="stylesheet">
 </head>
 
 <body>
-     <h1> Ejemplo de tabla</h1>
+     <h1> <span class="Practica"> PRÁCTICA DE </span> <br> <span class="Tablas"> tablas </span></h1>
      <!--La tablas son un conjutno estructurado de datos compuesto por filas y columnas-->    
-     <caption> Nombres </caption> <!--Representa un título descriptivo de una tabla.-->
-     <table border="1"> <!--Crea el elemento tabla--> <!--Con el atributo border añadimos bordes a nuestras tablas-->
+     <caption> <span class="Nom"> Nombres </span></caption> <!--Representa un título descriptivo de una tabla.-->
+     <table border="1" > <!--Crea el elemento tabla--> <!--Con el atributo border añadimos bordes a nuestras tablas-->
         <tr><!--Representa una fila-->
-            <th>Nombre 1</th> <!--Representa las celdas de encabezado-->
-            <th>Apellido 1</th>
-            <th>Apellido 2</th>
+            <th class="SF">Nombre 1</th> <!--Representa las celdas de encabezado-->
+            <th class="SF">Apellido 1</th>
+            <th class="SF">Apellido 2</th>
         </tr>
         <tr>
-            <td>Nombre 1</td> <!--representa la primera celda de la primera fila-->
-            <td>Apellido 1</td>
-            <td>Apellido 2</td>
+            <td class="SF">Nombre 1</td> <!--representa la primera celda de la primera fila-->
+            <td class="SF">Apellido 1</td>
+            <td class="SF">Apellido 2</td>
         </tr>
         <tr>
-            <td>Ania</td>
-            <td>Morales</Td>
-            <td>Eslava</td>
+            <td class="SF">Ania</td>
+            <td class="SF">Morales</Td>
+            <td class="SF">Eslava</td>
         </tr>
      </table>
 <br>
 <br>
-     <caption> Nombres incorrectos </caption>
-     <table border="1"> 
-            <th>Nombres correctos</th> 
+<!--Decoracion vectorial-->
+<svg width="1000" height="100">
+    <circle cx="100" cy="100" r= "100" class="elemento"/>
+</svg>
+<hr color="beige">
+<!--Tabla nueva-->
+<br>
+     <caption> <span class="Ni"> Nombres incorrectos </span> </caption>
+     <br>
+     <br>
+     <table border="1" class="Cuerpo-tabla"> 
+        <tr class="Encabezado">
+            <th >Nombres correctos</th> 
             <th>Nombres incorrectos</th>
         </tr>
         <tr>
-            <td>Ania</td> 
-            <td>Anahi</td>
+            <td>Esquivel</td> 
+            <td>Ezquivel</td>
         </tr>
         <tr>
             <td>Eveida</td>
-            <td>Evelyn</Td>
+            <td>Ebeida o Evelyn</Td>
+        </tr>
+        <tr>
+            <td>Zaldivar</td>
+            <td>Saldivar</td>
+        </tr>
+        <tr>
+            <td>Cerón</td>
+            <td>Zerón o Serón</td>
+        </tr>
+        <tr>
+            <td>Linares</td>
+            <td>Linarez</td>
+        </tr>
+        <tr>
+            <td>Alexis</td>
+            <td>Aletsis</td>
+        </tr>        
+        <tr>
+            <td>Carmona</td>
+            <td>Karmona</td>
+        </tr>    
+        <tr>
+            <td>Ania</td>
+            <td>Anita o Anahí</td>
+        </tr>
+    </table>
+ 
+<br>
+<br>
+<hr color="beige">
+<br>
+<!--Práctica de tabla 2-->
+<caption> <span class="Ni"> Tabla expandida </span> </caption>
+<br>
+<br>
+<table border="1" class="tabla-expandida">
+    <thead> <!--Agrupa los elementos en la cabecera de la tabla-->
+        <tr>
+            <th colspan="3">Encabezado de tablas
+            </th> <!--Permite expandir las celdas de datos o de encabezados al número columnas que deseamos que ocupe-->
+        </tr>
+    </thead>
+    <tbody> <!--Esta etiqueta agrupa los elementos de contenido en la tabla-->
+        <tr>
+            <td>Cuerpo de la tabla</td>
+            <td>Con 2 columnas</td>
+            <td>Columnas</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <th colspan="3">Piecitos</th>
+        </tr>
+    </tfoot>
+</table> 
+<br>
+<hr color="beige">
+
+<!--Anclajes internos y externos-->
+<h1> <span class="Practica"> ANCLAJES: </span> <br> <span class="Tablas"> interno</span></h1>
+<br>
+<!--Referenciado interno, secciones. Se generan enlaces que nos direccionan a secciones específicas de la página-->
+<nav class="secciones-web">
+<a href="#seccion1">Adopción de mascotas</a>
+<a href="#seccion2">Antes de llevar a un peludito a casa...</a>
+<a href="#seccion3">Dueño responsable</a>
+</nav>
+<!--Cuerpo del artículo-->
+<h2 id="seccion1"> Adopción de mascotas</h2>
+<h4 id="seccion2">Antes de llevar a un peludito a casa, debe tener en mente que es una responsabilidad monetaria a largo plazo y que ellos se merecen que les demos una vida digna.</h4>
+<p>Las organizaciones protectoras de animales siempre recomiendan tomar en cuenta que el adoptar una mascota representa una responsabilidad por muchos años, pero lo que también debemos tomar en cuenta antes de adoptar es el hecho de que esta responsabilidad también representa un gasto.</p>
+
+<br>
+
+<h2 id="seccion3"> Dueño responsable </h2>
+<p>El gobierno realiza campañas de vacunación y esterilización gratuitas, incluso la Facultad de Medicina Veterinaria y Zootecnia de la UNAM puso a disposición servicios de esterilización con costos de recuperación desde 650 a 1,200 pesos.</p>
+<div class="gato-imagen"> <img src="https://i.pinimg.com/564x/d5/32/25/d532258e651c5ccec50fe7f15ffcc3bc.jpg" alt="referencia"> </div>
+
+<p>Además de esto, debe contemplar que su mascota necesita aseo, muchas personas optan por bañar y cepillar a su mascota ellas mismas, por lo que únicamente gastan entre 200 y 300 pesos al año, sin embargo, hay quienes prefieren llevar a sus mascotas a estéticas caninas, por lo que el servicio varía desde 100 hasta 800 pesos por servicio.</p>
+
+<a href="introweb4.html">Regresar al inicio</a>
+
+<br>
+<br> 
+<!--Anclajes externos-->
+<hr color="beige">
+<h1> <span class="Practica"> ANCLAJES: </span> <br> <span class="Tablas"> externo</span></h1>
+<h2>Referenciar articulo dentro de otro</h2>
+<button>
+<a href="https://www.adopta.mx/">Refugios GDL</a> <!--Este es un anclaje que enaza a  una página diferente. El valor del atributo es la URL-->
+</button>
+
+<h4>Contacto telefonico</h4>
+<button>
+<a href="tel:+5521212230">+55-2121-2230</a> <!--Anclaje telefónico-->
+</button>
+
+<h4>Contacto de Whatsapp</h4>
+<button>
+<a href="https://wa.me/1234567890" target="_blank"> Envíanos un mensaje </a> <!--Targer="_blank" Estos enlaces abren la app en una pestaña nueva-->
+</button>
+
+<h4>Ubicación en el mapa</h4>
+<a href="https://www.google.com/maps/dir//FUNDACI%C3%93N+MANUEL+ROZADA,+C.+Miguel+Hidalgo+28,+Lomas+de+Guadalupe,+54767+Cuautitl%C3%A1n+Izcalli,+M%C3%A9x./data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x85d21e7d9c87d077:0xb4d51f97578f4092?sa=X&ved=2ahUKEwjl2unjpfaCAxWPkO4BHYv-BhcQ48ADegQICRAA" target="_blank">Ver ubicacion en el mapa</a> <!--Nos permite enlazar ubicaciones en servicios de mapas-->
+
+<h4>Redes sociales</h4>
+<button>
+<a href="https://www.facebook.com/FundacionManuelRozadaCuellar" target="_blank">facebook</a>
+</button>
+
+<br>
+<br>
+<!--Formularios y tipos de entrada-->
+<hr color="beige">
+<h1> <span class="Practica"> FORMULARIO Y TIPOS </span> <br> <span class="Tablas"> de entrada </span></h1>
+<form action="procesar_formulario" method="post"></form> <!--La etiqueta form se utiliza para crear un formulario en ht,l que permite a los usuarios ingresar información
+Action: Especifica a la URL a la que se enviaran los datos del formulario cuando este se envíe
+Método: Define el método http que se utilizará para enviar los datos-->
+
+<h4>Etiqueta imput</h4> <!--La etiqueta imput se utiliza para crear campos de entrada en un formulario-->
+<input type="text" name="usuarios" placeholder="Nombre">
+<input type="password" name="contraseña" placeholder="Contraseña"> <!-- type: Define el tipo de entrada (texto, contraseña, correo electrónico, etc.).
+    name: Es el nombre del campo, utilizado para identificar el dato cuando se envía el formulario.
+    placeholder: Proporciona un texto de ejemplo dentro del campo de entrada. -->
+<h4>Etiqueta label</h4>
+<!--LA etiqueta laber se utiliza para etoquetar un elemento de entrada en un formulario, lo que mejora la accesibilidad y la experiencia del usuario-->
+<label for="usuario">Usuario<!--For: Es un atributo, se aspcia con el Id de un elemento de entrada para identificar a que campo se refiere-->
+<input type="text" id="usuario" name="usuario">
+</label> 
+<br>
+<h4>Etiqueta button</h4>
+<!--Esta etiqueta se utiliza para crear botones en un formulario que los usuarios puedan usar para hacer click y enviar información-->
+<button type="submit"> Enviar </button>
+<button type="reset">Resetear</button>
+<!--Type: Define el tipo de boton-->
+<br>
+<h4>Area de texto</h4>
+<textarea name="comentarios" id="comentarios" cols="50" rows="10"></textarea>
+<br>
+<h4>Número</h4>
+<!--Crea un campo de entrada para ingresar número de una lista.-->
+<input type="number" name="numero" placeholder="Elije tu edad">
+<br>
+<h4>Correo electrónico</h4>
+<input type="email" name="correo" placeholder="Ingresa tu correo electrónico">
+<br>
+<h4>Numero de teléfono</h4>
+<input type="tel" name="telefono" placeholder="Ingresa tu número">
+<br>
+<h4>Fecha</h4>
+<input type="date" name="fecha">
+<br>
+<h4>Hora</h4>
+<input type="time" name="hora">
+<br>
+<h4>Archivo</h4>
+<input type="file" name="archivo" placeholder="Archivo">
+<br>
+<br>
+<a href="introweb4.html">Regresar al inicio</a>
 </body>
+
+<!--Footer-->
+<hr color="beige">
+<br>
+<footer> Sitio web diseñado por HotTamalitos. (HTML) </footer>
 </html>
