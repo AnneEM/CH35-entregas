@@ -1,0 +1,244 @@
+:root {
+    /* -- nombre de variable*/
+    /* Enfoque de diseño basado en sistemas para establecer reglas y patrones escalables y reutilizables.
+    Se personalizan variables para acceder a cualquier valor de una propiedad mediante la pseudoclase ":root" con la sintaxis --nombre-variable  */
+    --Primaria: 'Roboto', sans-serif;
+    --color-primario: #D95252;
+    --color-bg: #ADD9D1;
+    --color-caja: #F4E2DE;
+    --color-text: #0D0D0D;
+    --color-detalles: #038C7F;
+    --color-texto-secundario: #027373;
+    --Peso-subti: 400;  /*100,400 y 700*/
+}
+
+h1{
+    color: var(--color-primario);
+}
+h2{
+    color: var(--color-texto-secundario);
+    font-weight: var(--Peso-subti);
+}
+body{
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    font-family: var(--Primaria);
+}
+.position{
+    width: 100px;
+    height: 100px;
+    background-color: var(--color-caja);
+}
+/*Static: La posición estática es la posición x default de html. no se afecta por top, ni bottom, lesf ni right de ningun tipo*/
+#static{
+    position: static;
+    top: 20px;
+    left: 20px;
+    background-color: var(--color-detalles);
+}
+/*Relative: Es posicionado de forma relatia añ view port y si permite movimiento mediante propiedades top, bottom, left y right*/
+#relative{
+    position: relative;
+    top: 50px;
+    left: 200px;
+    background-color: var(--color-caja);
+}
+/*Absoluto: Se posiciona de forma relativa a su ancestro (Elemento más cercano en el viewport) más cercano y no respecto al viewport. Sin ancestro, absolute es como un relative*/
+#absolute {
+    position: absolute;
+    top: 50px;
+    left: 200px;
+    background-color: var(--color-texto-secundario);
+    color: var(--color-caja)
+}
+/*Este será el ancestro sobre el cual se moverá el hijo (El div afuera del div)*/
+#ancestro {
+    /*position: absolute;*/
+    width: 100px;
+    height: 100px;
+    background-color: var(--color-text);
+    border: solid var(--color-caja) 1px;
+    color: var(--color-caja);
+}
+
+/*Fixed nos permite mantener el elemento de manera fija en el viewport*/
+#fixed {
+    left: 350px;
+    top: 500px;
+    position: fixed;
+    background-color: var(--color-primario);
+}
+#chat {
+    position: fixed;
+    top: 550px;
+    left: 400px;
+    width: 60px;
+    height: 60px;
+}
+
+#whatsapp-icon {
+    width: 100%;
+}
+
+.display-inline{
+    width: 100px;
+    height: 100px;
+    background-color: var(--color-primario);
+    color: var(--color-caja);
+    text-align: center;
+    margin: 2px;
+}
+
+#display-1, #display-2 {
+    display: inline;
+}
+/*inline alinea y block apila*/
+.display-block{
+    /*display: block;*/
+    display: inline-block;
+
+    width: 100px;
+    height: 100px;
+    background-color: var(--color-text);
+    color: var(--color-caja);
+    text-align: center;
+    margin: 2px;
+}
+@media (max-width: 720px) {
+    .display-none {
+    display: none;
+    }
+}
+
+/*Display frex: me permite trabajar de manera flexible con elementos anidados dentro de un ancestro. El flexbox se aplica en el container y tiene efecto sobre los hijos. 
+Por default, la dirección de flex es en filas (row) Vamos a poder acceder a diversas propiedades para modificar el omportamiento de elementos
+----->Flex-direction:colum, column-reverse, row y row-reverse
+----->Flex-wrap: wrap, nowrap, wrap-reverse
+----->Justify-content: conten, flex-start, flex-end, space betweeb, space-around
+------>Aling-items: start, end, center
+------>Aling-flex: Flex-start
+*/
+/*Space around + align items centra div*/
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+   /* align-items: center;*/
+    width: auto;
+    height: 350px;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: var(--color-texto-secundario);
+}
+
+.display-flex{
+    width: 100px;
+    height: 80px;
+    margin: 5px;
+    padding: 2px;
+    text-align: center;
+    background-color: var(--color-text);
+    color: var(--color-bg);
+    border-radius: 6px;
+}
+
+#item-9{
+    align-self: center;
+}
+
+a{
+    text-decoration: none;
+    color: var(--color-bg);
+}
+
+/*Grid layout
+Elementos de una cuadrícula grid: Contenedor, items, celdas, area
+------> display: Grid
+*/
+.grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    /*grid-template-rows: auto; */
+    gap: 20px;
+    padding: 10px;
+}
+
+.display-grid{
+    background-color: var(--color-caja);
+    border-radius: 3px;
+    padding: 20px;
+    text-align: center;
+    border: solid var(--color-primario) 1px;
+}
+.container-1{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 2fr 2fr 1fr;
+    grid-template-areas:
+         "head head head"
+         "aside section section"
+         "aside article article"
+         "footer footer footer"
+
+    ;
+
+    width: auto;
+    height: 500px;
+    border: solid var(--color-detalles);
+    text-align: center;
+    margin: 10px;
+    font-size: 18px;
+    color: var(--color-caja);
+}
+
+header{
+    background-color: darkcyan;
+    grid-area: head;
+}
+/*nav{
+    background-color: tomato;
+    grid-area: nav;
+    }*/
+
+aside{
+    background-color: steelblue;
+    grid-area: aside;
+}
+section{
+    background-color: peru;
+    grid-area: section;
+}
+article{
+    background-color: burlywood;
+    grid-area: article;
+}
+footer{
+    background-color: seagreen;
+    grid-area: footer;
+}
+
+@media (max-width: 720px){
+    .container-1{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: (5, 2fr);
+        grid-template-areas:
+             "head"
+             "aside"
+             "section"
+             "article"
+             "footer"
+    
+        ;
+    
+        width: auto;
+        height: 500px;
+        border: solid var(--color-detalles);
+        text-align: center;
+        margin: 10px;
+        font-size: 18px;
+        color: var(--color-caja);
+    }
+}

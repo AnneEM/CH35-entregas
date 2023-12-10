@@ -1,0 +1,130 @@
+/*G fonts*/
+  @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600&family=Roboto&display=swap');
+
+:root{
+    --color-claro: #ffffff;
+    --texto-obscuro: #6B43FF;
+    --texto-claro: #7071B5;
+    --texto-general: #292929;
+    --degradado-obscuro: #B562F6;
+    --degrado-claro: #E4D6FE;
+    --Title: 'Quicksand', sans-serif;
+    --Texto-general: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: var(--color-claro);
+    height: 100vh;
+    font-family: var(--Texto-general);
+}
+.general-container{
+    height: 43.75em;
+    width:60em;
+    margin: 6em auto;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.login-info-container{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid red; /*Borrar*/
+    padding-top: 1rem;
+    background-color: var(--color-claro);
+}
+
+.image-dev{
+    width: 40%;
+    padding: 2rem;
+    background: linear-gradient(to right, var(--degrado-claro), var(--degradado-obscuro));
+}
+
+.title{
+    font-family: var(--Title);
+    font-size: 2.25rem;
+    letter-spacing: .5px;
+}
+.social-login{
+    width: 100%;
+    display: flex;
+    border: 2px solid blue;
+    justify-content: space-between;
+}
+
+.social-login-element{
+    width: 12.5rem;
+    height: 3.75rem;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    border: 1px solid var(--texto-general);
+}
+
+.social-login-element img{
+    width: 1.8rem;
+    height: 1.8rem;
+    position: relative;
+    top: 0;
+    left: -0.5rem;
+}
+
+.social-login-element:hover{
+    cursor: pointer;
+}
+
+.login-info-container > p {
+    font-size: 1.2em;
+    margin-top: -.01em;
+}
+
+.inputs-container{
+    border: 2px aqua solid;
+    height: 50%;
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.input, .button {
+    width: 250px;
+    height: 3rem;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+.input{
+    padding-left: 20px;
+    border: 1px var(--texto-general) solid;
+    box-sizing: border-box;
+}
+
+.input:hover{
+    border: 2px solid var(--texto-obscuro);
+}
+
+.button{
+    justify-content: center;
+    align-items: center;
+    background-color: var(--texto-obscuro);
+    color: var(--color-claro);
+    border: none;
+    font-weight: bold;
+}
+.button:hover{
+    cursor: pointer;
+    background-color: var(--texto-claro);
+}
+
+.inputs-container  > p {
+    color: var(--texto-obscuro);
+    font-weight: bold;
+    cursor: pointer;
+}
