@@ -1,0 +1,7 @@
+package colecciones;
+
+public class ArraysListCollections {
+	public static void main (String[] args) {
+	
+	}
+}

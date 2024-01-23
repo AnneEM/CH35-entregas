@@ -1,0 +1,31 @@
+package org.generation.employee;
+
+/*  ESTRUCTURA BÁSICA PARA CREAR OBJETOS
+ * 1. Atributos o propiedades
+ * 2. Método constructor (1- n métodos)
+ * 3. Métodos del objeto (Comportamiento)
+ * 4. Métodos Getters y Setters
+ * 5. Método string
+ * 
+ */
+
+
+public class Employee {
+	
+	// 1. Atributos o propiedades
+	String nombre;
+	String apellido;
+	int id;
+	double salario;
+	String puesto;
+	
+	
+	// 2. Método constructor. Tiene el mismo nombre que la clase,  no retorna nada, recibe parámetros (Atributos) y los asigna a variables del constructor (this)
+	Employee(String nombre, String apellido, int id, double salario, String puesto){
+		this.nombre = nombre;
+		this.apellido = apellido;
+		this.id = id;
+		this.salario = salario;
+		this.puesto = puesto;
+	}
+}

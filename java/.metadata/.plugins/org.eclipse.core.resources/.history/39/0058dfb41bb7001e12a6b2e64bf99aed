@@ -1,0 +1,10 @@
+package org.generation.excercise;
+
+public class Productos {
+	public static void main (String[] args) {
+		/*
+		 * Crear un programa que permita al usuario agregar un ID de produto y el nombre del producto
+		 * Mostrar la lista 
+		 */
+	}
+}

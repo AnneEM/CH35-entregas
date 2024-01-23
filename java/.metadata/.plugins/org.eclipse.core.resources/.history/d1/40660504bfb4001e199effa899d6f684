@@ -1,0 +1,22 @@
+package ciclos;
+
+public class WhileLoop {
+
+	public static void main(String[] args) {
+		// CICLO WHILE
+		/*Este ciclo, ejecuta un bloque de código hasta que se cumpla una condicion dada
+		 * 
+		 * while (expresion){
+		 * -bloque de código a ejecutar-
+		 * (Contador-iterador)
+		 * }
+		 * */
+		
+		int cuenta = 0;
+		while (cuenta < 5) {
+			cuenta ++;
+			System.out.println("La cuenta es de " + cuenta);
+		}
+	}
+
+}

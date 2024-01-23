@@ -1,0 +1,9 @@
+package org.generation.letras;
+
+import java.util.Scanner;
+
+public class Letras {
+//Para que nuestro usuario interactue, definimos un escaner.
+	
+	
+}

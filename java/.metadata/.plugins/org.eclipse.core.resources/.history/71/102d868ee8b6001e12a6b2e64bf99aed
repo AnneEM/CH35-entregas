@@ -1,0 +1,16 @@
+package generation.collections;
+
+import java.util.Arrays;
+
+public class ArrayListCollections {
+	public static void main(String[] args) {
+		//*****ARRAYYS*****
+		String[] names = {"Jonathan","Eveida","Eunice","Rey","David","Lucero"};
+		//Imprimiento Arrays
+		System.out.println(Arrays.toString(names));
+		
+		
+		int[] edades = {22, 23, 34, 21, 34, 45, 58};
+		System.out.println(Arrays.toString(edades));
+	}
+}

@@ -1,0 +1,19 @@
+package ciclos;
+
+public class ForLoop {
+
+	public static void main(String[] args) {
+		/*
+		 * El ciclo for, nos proporciona una forma compacta de iterar sobre lso valores.
+		 * for (inicialiazación;condicion;contador){
+		 * bloque ed codugo}
+		 * 
+		 * */
+		//FOR CON VARIABLE LOCAL
+		for (int numero =0; numero <=10; numero++) {
+			System.out.println("Numero es " + numero);
+		}
+		
+	}//metodo
+
+}//clase

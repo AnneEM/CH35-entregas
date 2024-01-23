@@ -1,0 +1,9 @@
+package generation.collections;
+
+public class ArrayListCollections {
+	public static void main(String[] args) {
+		//*****ARRAYYS*****
+		String[] names = {"Jonathan","Eveida","Eunice","Rey","David","Lucero"};
+		System.out.println(names);
+	}
+}

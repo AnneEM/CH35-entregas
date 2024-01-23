@@ -1,0 +1,49 @@
+package funciones;
+import java.util.ArrayList;
+import java.util.List;
+public class CarritoCompras {
+	
+	static class Producto {
+		String nombre;
+		double precio;
+		
+		Producto(String nombre, double precio){
+			this.nombre = nombre;
+			this.precio = precio;
+		}
+	    }
+		
+		static class CarritoCompra{
+			List<Producto> productos = new ArrayList<>();
+			
+			void agregarProducto(Producto hidratante) {
+				productos.add(hidratante);
+			}
+			
+			double calcularTotal() {
+				double total = 0;
+				for (Producto hidratante : productos) {
+				total += hidratante.precio;
+				}
+				return total;
+			}		
+			
+		}
+		    
+
+	public static void main(String[] args) {
+	Producto crema1 = new Producto ("CremaNoche",400);
+	Producto crema2 = new Producto ("CremaDia",400);
+	
+	
+	CarritoCompra carrito = new CarritoCompra();
+	
+	carrito.agregarProducto(crema1);
+	carrito.agregarProducto(crema2);
+	
+	double totalCarrito = carrito.calcularTotal();
+	
+	System.out.println("Total del carrito $" + totalCarrito);
+	}
+
+}

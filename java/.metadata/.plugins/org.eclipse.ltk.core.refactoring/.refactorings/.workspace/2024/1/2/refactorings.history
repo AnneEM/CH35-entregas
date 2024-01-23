@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;JavaGeneration&apos; to &apos;tiposDeDatosYVariables&apos;" description="Rename resource &apos;JavaGeneration&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/JavaGeneration" name="tiposDeDatosYVariables" stamp="1705101087888" updateReferences="true"/>
+</session>

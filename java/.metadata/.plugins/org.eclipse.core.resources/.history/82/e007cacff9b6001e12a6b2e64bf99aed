@@ -1,0 +1,16 @@
+package org.generation.excercise;
+/*Programa que permite que un usuario agregue nombre y apellido de estudiantes matriculados en una universidad. Posteriomente, muestra la lista de los estudiantes agregados.*/
+
+
+public class SistemaEscolar {
+	public static void main(String[] args) {
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+}

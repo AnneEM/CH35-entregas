@@ -1,0 +1,30 @@
+package ciclos;
+
+public class ContinueLoop {
+
+	public static void main(String[] args) {
+		/*
+		 * Instrucciones de salto:
+		 * Continue--interrumpe la interaccion del bucle, si se procede una condicion específica y continua con la siguiente.
+		 * 
+		 */
+		
+		//Con continue, ejecutando la sentencia condicional, pero cumpliento la condicion del bucle for. 
+		
+		for(int cliente =1; cliente <= 10; cliente++) {
+			if(cliente %4 == 0) {
+				System.out.println("Cliente número " + cliente + "es divisible");
+				continue;
+			}
+		}
+			
+			
+		
+		
+		
+		
+		
+		
+	}
+
+}

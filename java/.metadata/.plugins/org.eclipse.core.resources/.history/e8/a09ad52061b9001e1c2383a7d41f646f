@@ -1,0 +1,29 @@
+package org.generation.letras;
+//CONTADOR: Métodos para contar vocales, consonantes, numeros y simbolos
+/*Necesitamos establecer dos grupos de métodos:
+ *    Grupo 1: Métodos booleanos para determinar si corresponde  o no.
+ *    Grupo 2: Métodos que van a devolver el conteo de dichos caracteres
+ */
+
+public class Contador {
+	//Grupo 1
+	public boolean esVocal() {
+		return
+	}
+	
+	public boolean esNumero() {
+		return
+	}
+	
+	public boolean esConsonante() {
+		return
+	}
+	
+	public boolean esSimbolo() {
+		return
+	}
+	
+	
+	//Grupo 2
+	
+}

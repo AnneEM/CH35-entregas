@@ -1,0 +1,17 @@
+package ciclos;
+
+public class DoWhile {
+
+	public static void main(String[] args) {
+		// DO WHILE
+		/*Evalua la expresion en la parte inferior del ciclo, por tanto, las declaraciones dentro del bloque "do" Siempre se ejecutan al menos una vez*/ 
+		
+		int cuenta = 5;
+		do {
+			System.out.println("cuenta " + cuenta++);
+			cuenta++;
+		}while(cuenta < 0); //Output 1 ya se ejecuto al menos una vez
+
+	}
+
+}
